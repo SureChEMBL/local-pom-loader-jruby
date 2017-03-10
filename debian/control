@@ -1,0 +1,15 @@
+Source: jruby-local-pom-loader
+Section: ruby
+Priority: optional
+Maintainer: Yury Zavarin <yzavarin@ebi.ac.uk>
+XS-Ruby-Versions: all
+Build-Depends:
+ debhelper (>= 9~),
+
+Package: jruby-local-pom-loader
+Architecture: all
+XS-Ruby-Versions: ${ruby:Versions}
+Depends:
+ jruby,
+ local-pom-loader,
+Description: Loads transitive Java dependencies from local maven repo
